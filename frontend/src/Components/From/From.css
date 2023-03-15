@@ -1,0 +1,92 @@
+.from_section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form_wrap > form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.form_wrap > form > input{
+    width: 300px;
+    margin-bottom: 15px;
+    outline: 0;
+    border: 0;
+    padding: 7px 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: #5a5d5a;
+}
+
+.form_wrap > form > select{
+    width: 300px;
+    margin-bottom: 15px;
+    padding: 7px 20px;
+    outline: 0;
+    border: 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: #5a5d5a;
+}
+
+.submit_btn{
+    background-color: rgb(70, 66, 181);
+    color: #fff !important;
+    cursor: pointer;
+}
+
+.transaction_history{
+    width: 80%;
+    margin: auto;
+}
+
+.transaction_history_title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.transaction_history_title > h3{
+    color: #333;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.levels_section_wrap {
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px)  {
+    .from_section{
+        width: 100%;
+        margin: auto;
+    }
+    .form_wrap > form {
+        width: 95%;
+        margin: auto;
+        padding: 20px 0;
+    }
+    .form_wrap > form > input{
+        width: 320px;
+        height: 40px;
+    }
+    .form_wrap > form > select{
+        width: 320px;
+        height: 40px;
+    }
+
+    .levels_section_wrap {
+        width: 100%;
+    }
+
+    .transaction_history{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+}

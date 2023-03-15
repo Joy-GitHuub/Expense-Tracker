@@ -1,0 +1,172 @@
+.balance_section{
+    position: sticky;
+    top: 0;
+    padding-bottom: 20px;
+}
+
+.graph_wrap{
+    position: relative;
+}
+
+.balance_text_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.balance_text_wrap > h3{
+    font-size: 19px;
+    color: #333;
+    font-weight: 500;
+}
+.balance_text_wrap > h6{
+    font-size: 15px;
+    font-weight: 600;
+    color: #2ecc71;
+}
+
+.balance_amount_wrap {
+    width: 290px;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    background-color: #f7f7f7;
+    border: 1px solid #33333350;
+    margin-top: 20px;
+}
+
+.income_wrap, .expenses_wrap, .invest_wrap {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 0px;
+}
+
+.expenses_wrap > h4, .income_wrap>h4, .invest_wrap> h4 {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.income_wrap > h6{
+    font-size: 13px;
+    color: green;
+    font-weight: 500;
+}
+
+.expenses_wrap > h6{
+    font-size: 13px;
+    color: red;
+    font-weight: 500;
+}
+.expenses_wrap > h4, .income_wrap>h4, .invest_wrap > h4 {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.invest_wrap > h6{
+    font-size: 13px;
+    /* color: rgba(26, 255, 0, 0.904); */
+    color: rgb(154, 216, 30);
+    font-weight: 500;
+}
+
+
+
+.saving_expense_percent_wrap{
+    margin-top: 35px;
+}
+
+.saving_percent_wrap{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 7px 15px;
+    margin-bottom: 10px;
+    background-color: #ddd;
+    border-left: 5px solid green;
+}
+
+.expense_percent_wrap{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 7px 15px;
+    background-color: #ddd;
+    border-left: 5px solid red;
+    margin-bottom: 10px;
+}
+
+.expense_percent_wrap > h3, .saving_percent_wrap > h3{
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+.expense_percent_wrap > h6, .saving_percent_wrap> h6{
+    font-size: 12px;
+    font-weight: 500;
+    color: #333;
+}
+
+.investment_percent_wrap{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 7px 15px;
+    background-color: #ddd;
+    border-left: 5px solid yellow;
+}
+
+.investment_percent_wrap > h3, .investment_percent_wrap > h3{
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+.investment_percent_wrap > h6, .investment_percent_wrap> h6{
+    font-size: 12px;
+    font-weight: 500;
+    color: #333;
+}
+
+@media only screen and (max-width: 600px)  {
+    .balance_section{
+        position: static;
+        top: 0;
+        padding-bottom: 20px;
+        width: 90%;
+        margin: auto;
+    }
+
+    .graph_wrap{
+        position: relative;
+        width: 90%;
+        margin: auto;
+    }
+
+    .balance_amount_wrap {
+        width: 100%;
+        height: 100px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        place-items: center;
+        background-color: #f7f7f7;
+        border: 1px solid #33333350;
+        margin-top: 20px;
+    }
+}

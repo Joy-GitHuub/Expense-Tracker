@@ -1,0 +1,17 @@
+.main_container {
+    width: 65%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 50px;
+    gap: 0px;
+    place-items: center;
+    align-items: flex-start;
+}
+
+@media only screen and (max-width: 600px)  {
+    .main_container{
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+}

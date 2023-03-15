@@ -1,0 +1,19 @@
+    /*     const getTodosFromLocalStorage = () => {
+        return localStorage.getItem("mytodos")
+            ? JSON.parse(localStorage.getItem("mytodos"))
+            : [];
+    };
+ 
+    // addTodo
+    const addTodo = (data) => {
+ 
+        const todos = getTodosFromLocalStorage();
+        todos.push(data);
+        localStorage.setItem("mytodos", JSON.stringify(todos));
+    };
+ 
+    const loadTodos = () => {
+        const todos = getTodosFromLocalStorage();
+        console.log(todos);
+    };
+    window.addEventListener("DOMContentLoaded", loadTodos); */
